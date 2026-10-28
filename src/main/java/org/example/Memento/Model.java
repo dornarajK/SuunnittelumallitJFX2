@@ -1,4 +1,4 @@
-package Memento;
+package org.example.Memento;
 
 
 public class Model {

@@ -12,10 +12,9 @@ import javafx.stage.Stage;
 public class Controller {
     private Model model;
     private Gui gui;
-    private List<IMemento> history; // Memento history
+    private List<IMemento> history;
 
     // history
-    private ArrayList<IMemento> undoHistory = new ArrayList<>();
     private ArrayList<IMemento> redoHistory = new ArrayList<>();
 
     public Controller(Gui gui) {

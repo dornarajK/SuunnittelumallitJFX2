@@ -27,7 +27,7 @@ public class Computer {
         this.operatingSystem = operatingSystem;
     }
 
-    // to display the computer configuration
+    // to display
     @Override
     public String toString() {
         return "Processor: " + processor +

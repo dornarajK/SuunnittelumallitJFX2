@@ -26,7 +26,7 @@ public abstract class Map {
     public int getHeight() {
         return height;
     }
-
+    // Gets a tile at a specific position.
     public Tile getTile(int x, int y) {
         if (x < 0 || x >= width || y < 0 || y >= height) {
             throw new IndexOutOfBoundsException("Tile position outside map: " + x + ", " + y);
@@ -37,7 +37,6 @@ public abstract class Map {
         return tiles[y][x];
     }
 
-    /** Draws individual tile positions while reusing one graphic per terrain class. */
     public void render(Canvas canvas, int tileSize, TileGraphicFactory factory) {
         if (tileSize <= 0) {
             throw new IllegalArgumentException("Tile size must be positive");
@@ -53,7 +52,6 @@ public abstract class Map {
         }
     }
 
-    /** Retained for the earlier console version of the assignment. */
     public void display() {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
